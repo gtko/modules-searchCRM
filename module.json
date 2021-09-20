@@ -1,0 +1,13 @@
+{
+    "name": "SearchCRM",
+    "alias": "searchcrm",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
