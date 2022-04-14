@@ -35,6 +35,7 @@ class SearchCRM implements SearchContract
         if($value) {
             foreach ($this->repositories as $repository) {
                 $repository = app($repository);
+                $repository->searchStart();
                 if(Gate::allows('view', $repository->getModel())) {
                     $query = $repository->newQuery();
                     foreach (explode(' ', $value) as $lem) {
@@ -55,6 +56,7 @@ class SearchCRM implements SearchContract
                         })
                     );
                 }
+                $repository->searchStop();
             }
         }
 
