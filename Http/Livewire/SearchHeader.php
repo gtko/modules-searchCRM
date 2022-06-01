@@ -25,7 +25,7 @@ class SearchHeader extends Component
     {
         $results = collect([]);
         if(strlen($this->search) > 2){
-            $results = $searchService->all()->search($this->search, 3);
+            $results = $searchService->all()->search($this->search, 10);
         }
 
         return view('searchcrm::livewire.search-header', [
