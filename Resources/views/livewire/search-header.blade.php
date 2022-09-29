@@ -14,7 +14,7 @@
 
         @if(!empty($this->search))
             @if($results->count() > 0)
-            <div class="search-result show">
+            <div class="search-result show" >
                 <div class="intro-x search-result__content">
                     @foreach($results->groupBy('tag') as $label => $items)
                         <div class="intro-y search-result__content__title">
